@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.mayanan.restapi.mapper.MyUserMapper">
+    <resultMap id="userResultMap" type="cn.mayanan.restapi.bean.MyUserBean">
+        <id property="id" column="user_id" />
+        <result property="name" column="user_name" />
+        <association property="department" javaType="cn.mayanan.restapi.bean.Department">
+            <id property="id" column="dep_id" />
+            <result property="name" column="dep_name" />
+        </association>
+    </resultMap>
+    <select id="getUserById" resultMap="userResultMap" parameterType="int">
+        select
+            u.id as user_id,
+            u.name as user_name,
+            d.id as dep_id,
+            d.name as dep_name
+        from
+            user as u
+        left join
+            department as d
+        on
+            u.department_id = d.id
+        where
+            u.id = #{id}
+    </select>
+</mapper>
+
+
+
+
+
+
+
+
+

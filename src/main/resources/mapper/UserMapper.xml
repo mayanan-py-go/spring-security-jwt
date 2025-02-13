@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.mayanan.restapi.mapper.UserMapper">
+    <!-- 在复杂的sql查询中，使用resultMap是最佳实践, 它能清晰的定义嵌套对象的映射规则 -->
+    <resultMap id="userResultMap" type="cn.mayanan.restapi.bean.UserBean">
+        <id column="id" property="id" />
+        <result column="name" property="username" />
+        <result column="password" property="password" />
+    </resultMap>
+    <!-- 通过id查询用户信息-->
+    <select id="getUserById" parameterType="int" resultMap="userResultMap">
+        select id, name, password from user where id = #{id}
+    </select>
+<!--    通过name查询用户信息-->
+    <select id="getUserByName" parameterType="String" resultMap="userResultMap">
+        select id, name, password from user where name = #{name}
+    </select>
+
+    <!-- 查询所有用户信息 -->
+    <select id="getAllUsers" resultMap="userResultMap">
+        select id, name, password from user
+        order by id
+    </select>
+</mapper>
+
+
+
+
+
+
+
+
