@@ -1,0 +1,32 @@
+2025-02-14 11:44:56.506 [restartedMain] INFO  cn.mayanan.restapi.RestapiApplication - Starting RestapiApplication using Java 17.0.12 with PID 34684 (C:\Users\sunkaisens\Desktop\myvue3\restapi\target\classes started by sunkaisens in C:\Users\sunkaisens\Desktop\myvue3\restapi)
+2025-02-14 11:44:56.520 [restartedMain] INFO  cn.mayanan.restapi.RestapiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-14 11:44:56.588 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-14 11:44:56.588 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-14 11:44:59.467 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-02-14 11:44:59.475 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-02-14 11:44:59.500 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-02-14 11:44:59.517 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-02-14 11:44:59.520 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-14 11:44:59.521 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-14 11:44:59.621 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-14 11:44:59.622 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3032 ms
+2025-02-14 11:45:00.142 [restartedMain] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4f74c929-46f5-479b-8f3a-e11c8d3dd4ed
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-02-14 11:45:00.178 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-02-14 11:45:00.967 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-14 11:45:00.993 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-02-14 11:45:01.022 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-02-14 11:45:01.038 [restartedMain] INFO  cn.mayanan.restapi.RestapiApplication - Started RestapiApplication in 5.229 seconds (process running for 8.341)
+2025-02-14 11:45:15.444 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-14 11:45:15.444 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-14 11:45:15.446 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-02-14 11:45:15.684 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - demo05 - Starting...
+2025-02-14 11:45:16.310 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - demo05 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b7aad69
+2025-02-14 11:45:16.312 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - demo05 - Start completed.
+2025-02-14 11:45:16.547 [http-nio-8081-exec-1] INFO  cn.mayanan.restapi.controller.MyRestController - This is an info message
+2025-02-14 11:45:16.547 [http-nio-8081-exec-1] WARN  cn.mayanan.restapi.controller.MyRestController - This is a warn message
+2025-02-14 11:45:16.547 [http-nio-8081-exec-1] ERROR cn.mayanan.restapi.controller.MyRestController - This is an error message
