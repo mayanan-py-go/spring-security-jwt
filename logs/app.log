@@ -30,3 +30,7 @@ This generated password is for development use only. Your security configuration
 2025-02-14 11:45:16.547 [http-nio-8081-exec-1] INFO  cn.mayanan.restapi.controller.MyRestController - This is an info message
 2025-02-14 11:45:16.547 [http-nio-8081-exec-1] WARN  cn.mayanan.restapi.controller.MyRestController - This is a warn message
 2025-02-14 11:45:16.547 [http-nio-8081-exec-1] ERROR cn.mayanan.restapi.controller.MyRestController - This is an error message
+2025-02-14 11:47:39.977 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-14 11:47:40.055 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-02-14 11:47:40.079 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - demo05 - Shutdown initiated...
+2025-02-14 11:47:40.117 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - demo05 - Shutdown completed.
